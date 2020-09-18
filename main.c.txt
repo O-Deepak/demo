@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include <myfn.h>
 
 /*
-void printop()
+void printop(int a)
 {
 printf("Hello");
 }
@@ -9,9 +9,12 @@ printf("Hello");
 
 int main() 
 {
+	int a=0;
+	printf("Enter any no");
+	scanf("%d",&a);
    while(1)
 	{
-		printop();
+		printop(a);
 	}
    return 0;
 }
