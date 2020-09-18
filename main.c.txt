@@ -1,6 +1,15 @@
 #include <stdio.h>
-int main() {
-   // printf() displays the string inside quotation
-   printf("Hello, World!");
+void printop()
+{
+printf("Hello");
+}
+
+
+int main() 
+{
+   while(1)
+	{
+		printop();
+	}
    return 0;
 }
