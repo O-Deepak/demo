@@ -6,22 +6,22 @@ void main()
     float fcode;
     int quantity, location;
     ccolor(26);
-    insertend(&s, 1.1, "Samosa", 1, 50);
-    insertend(&s, 1.2, "Grilled Cheese Sandwich", 1, 100);
-    insertend(&s, 1.3, "Nachos", 1, 150);
-    insertend(&s, 1.4, "Chicken Burger", 1, 150);
-    insertend(&s, 1.5, "BBQ Chicken Roll", 1, 250);
-    insertend(&m, 2.1, "Pav Bhaji", 1, 200);
+    insertend(&s, 1.1, "Samosa", 1, 25);
+    insertend(&s, 1.2, "Grilled Cheese Sandwich", 1, 50);
+    insertend(&s, 1.3, "Nachos", 1, 100);
+    insertend(&m, 2.6, "Veg Pulao", 1, 200);
+    insertend(&m, 2.1, "Pav Bhaji", 1, 100);
     insertend(&m, 2.2, "Punjabi Thali", 1, 350);
     insertend(&m, 2.3, "Mexican Sizzler", 1, 250);
-    insertend(&m, 2.4, "Peri Peri Chicken Pizza", 1, 250);
     insertend(&m, 2.5, "Margherita Pizza", 1, 200);
-    insertend(&m, 2.6, "Veg Pulao", 1, 250);
-    insertend(&m, 2.7, "Chicken Handi Biryani", 1, 350);
+    insertend(&m, 2.4, "Peri Peri Chicken Pizza", 1, 250);
+    insertend(&s, 1.4, "Chicken Burger", 1, 150);
+    insertend(&s, 1.5, "BBQ Chicken Roll", 1, 250);
+    insertend(&m, 2.7, "Chicken Handi Biryani", 1, 250);
     insertend(&d, 3.1, "Chocolate Overload Waffle", 1, 150);
-    insertend(&d, 3.2, "Cinnamon Waffle", 1, 150);
-    insertend(&d, 3.3, "Chocolate Cake", 1, 250);
-    insertend(&d, 3.4, "Red Velevet Cake", 1, 350);
+    insertend(&d, 3.2, "Cinnamon Waffle", 1, 50);
+    insertend(&d, 3.3, "Chocolate Cake", 1, 50);
+    insertend(&d, 3.4, "Red Velevet Cake", 1, 50);
     insertend(&d, 3.5, "Strawberry Mouse", 1, 100);
     insertend(&d, 3.6, "Orea Freakshake", 1, 150);
     insertend(&d, 3.7, "Fruit Milkshake", 1, 80);
@@ -38,9 +38,9 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
     //register new user
         if(ch==2)
         {
-            printf(" \n\n                  ENTER USERNAME:-");
+            printf(" \n\n  ENTER USERNAME:-");
             scanf("%s", &userid1);
-            printf(" \n\n                  ENTER PASSWORD:-");
+            printf(" \n\n  ENTER PASSWORD:-");
             while(i<20)
             {
                 password1[i]=getch();
@@ -50,15 +50,15 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                 i++;
             }
             password1[i]='\0';
-            printf("\n\n            Registered Successfully!\n");
+            printf("\n\n Registered Successfully!\n");
             Sleep(2000);
         }
         else
         {
 
-            printf(" \n\n                  ENTER USERNAME:-");
+            printf(" \n\n ENTER USERNAME:-");
             scanf("%s", &userid);
-            printf(" \n\n                  ENTER PASSWORD:-");
+            printf(" \n\n ENTER PASSWORD:-");
             c=' '; i=0;
             while(i<20)
             {
@@ -72,7 +72,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             //USERMENU
             if(strcmp(userid,userid1)==0&&strcmp(password,password1)==0)
             {
-                printf("\n\n            LOGIN SUCCESFULL!");
+                printf("\n\n LOGIN SUCCESFULL!");
                 Sleep(2000);
                 cls();
                 int i, ch;
@@ -180,15 +180,15 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             //admin
             else if(strcmp(uid,"admin")==0&&strcmp(pwd,"admin123")==0)
             {
-                printf("\n\n            WELCOME ADMIN");
+                printf("\n\n WELCOME ADMIN");
                 Sleep(3000);
                 cls();
                 int adch;
-        admin:  printf("\n\n            Enter Choice:\n");
-                printf("            1. View Menu\n");
-                printf("            2. Update Menu\n");
-                printf("            3. View Recent Order\n");
-                printf("            4. Log Out\n");
+        admin:  printf("\n\n Enter Choice:\n");
+                printf("     1. View Menu\n");
+                printf("     2. Update Menu\n");
+                printf("     3. View Recent Order\n");
+                printf("     4. Log Out\n");
                 scanf("%d", &adch);
                 cls();
                 if(adch==4)
@@ -220,7 +220,6 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                         {
                             goto admin;
                         }
-
                         break;
                     case 2:
                         cls();
@@ -273,7 +272,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             }
             else
             {
-                printf("\n\n        INCORRECT USERNAME OR PASSWORD");
+                printf("\n\n INCORRECT USERNAME OR PASSWORD");
                 Sleep(2000);
             }
     }
