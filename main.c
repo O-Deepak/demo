@@ -3,7 +3,7 @@
 void main()
 {
     head x, side, main, dess, o;
-    x.start=s.start=m.start=d.start=o.start=NULL;
+    x.start=side.start=main.start=dess.start=o.start=NULL;
     float fcode;
     int quantity, location;
     ccolor(26);
