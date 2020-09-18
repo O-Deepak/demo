@@ -3,7 +3,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include<windows.h>
 
 void insertend(head *t, float data, char foodname[25], int quantity, float price);
 void ccolor(int clr);
