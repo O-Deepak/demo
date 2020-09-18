@@ -1,6 +1,7 @@
 #include<myfn.h>
 
-void printop()
+
+void printop(int a)
 {
-	printf("hello");
+	printf("hello %d",a);
 }
