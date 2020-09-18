@@ -4,6 +4,22 @@
 #include<stdlib.h>
 #include<string.h>
 
+typedef struct node
+{
+
+	float data;
+	char foodname[50];
+	int quantity;
+	float price;
+    struct node *next;
+
+}node;
+typedef struct head
+{
+    node *start;
+}head;
+
+
 void insertend(head *t, float data, char foodname[25], int quantity, float price);
 void ccolor(int clr);
 void foodlist(head *t);
