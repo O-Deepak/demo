@@ -115,7 +115,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                                 scanf("%f", &fcode);
                                 printf("Enter Quantity of Food:\n");
                                 scanf("%d", &quantiy);
-                                order(&side, &o, fcode, qty);
+                                order(&side, &o, fcode, quantity);
                                 foodlist1(&o);
                                 break;
                         case 2: foodlist(&main);
