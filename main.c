@@ -179,7 +179,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                     printf("\nInvalid Choice.\n");
             }
             //admin
-            else if(strcmp(uid,"admin")==0&&strcmp(pwd,"admin123")==0)
+            else if(strcmp(userid,"admin")==0&&strcmp(password,"admin123")==0)
             {
                 printf("\n\n WELCOME ADMIN");
                 Sleep(3000);
