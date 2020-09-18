@@ -1,9 +1,11 @@
 #include <stdio.h>
+
+/*
 void printop()
 {
 printf("Hello");
 }
-
+*/
 
 int main() 
 {
