@@ -58,7 +58,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
         {
 
             printf(" \n\n ENTER USERNAME:-");
-            scanf("%s", &userid);
+            scanf("%c", &userid);
             printf(" \n\n ENTER PASSWORD:-");
             c=' '; i=0;
             while(i<20)
@@ -114,7 +114,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                                 printf("Enter Food Code:\n");
                                 scanf("%f", &fcode);
                                 printf("Enter Quantity of Food:\n");
-                                scanf("%d", &quantiy);
+                                scanf("%d", &quantity);
                                 order(&side, &o, fcode, quantity);
                                 foodlist1(&o);
                                 break;
