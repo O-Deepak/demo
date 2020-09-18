@@ -1,30 +1,30 @@
 #include<myfn.h>
 void main()
 {
-    head x, s, m, d, o;
+    head x, side, main, dess, o;
     x.start=s.start=m.start=d.start=o.start=NULL;
     float fcode;
     int quantity, location;
     ccolor(26);
-    insertend(&s, 1.1, "Samosa", 1, 25);
-    insertend(&s, 1.2, "Grilled Cheese Sandwich", 1, 50);
-    insertend(&s, 1.3, "Nachos", 1, 100);
-    insertend(&m, 2.6, "Veg Pulao", 1, 200);
-    insertend(&m, 2.1, "Pav Bhaji", 1, 100);
-    insertend(&m, 2.2, "Punjabi Thali", 1, 350);
-    insertend(&m, 2.3, "Mexican Sizzler", 1, 250);
-    insertend(&m, 2.5, "Margherita Pizza", 1, 200);
-    insertend(&m, 2.4, "Peri Peri Chicken Pizza", 1, 250);
-    insertend(&s, 1.4, "Chicken Burger", 1, 150);
-    insertend(&s, 1.5, "BBQ Chicken Roll", 1, 250);
-    insertend(&m, 2.7, "Chicken Handi Biryani", 1, 250);
-    insertend(&d, 3.1, "Chocolate Overload Waffle", 1, 150);
-    insertend(&d, 3.2, "Cinnamon Waffle", 1, 50);
-    insertend(&d, 3.3, "Chocolate Cake", 1, 50);
-    insertend(&d, 3.4, "Red Velevet Cake", 1, 50);
-    insertend(&d, 3.5, "Strawberry Mouse", 1, 100);
-    insertend(&d, 3.6, "Orea Freakshake", 1, 150);
-    insertend(&d, 3.7, "Fruit Milkshake", 1, 80);
+    insertend(&side, 1.1, "Samosa", 1, 25);
+    insertend(&side, 1.2, "Grilled Cheese Sandwich", 1, 50);
+    insertend(&side, 1.3, "Nachos", 1, 100);
+    insertend(&main, 2.6, "Veg Pulao", 1, 200);
+    insertend(&main, 2.1, "Pav Bhaji", 1, 100);
+    insertend(&main, 2.2, "Punjabi Thali", 1, 350);
+    insertend(&main, 2.3, "Mexican Sizzler", 1, 250);
+    insertend(&main, 2.5, "Margherita Pizza", 1, 200);
+    insertend(&main, 2.4, "Peri Peri Chicken Pizza", 1, 250);
+    insertend(&side, 1.4, "Chicken Burger", 1, 150);
+    insertend(&side, 1.5, "BBQ Chicken Roll", 1, 250);
+    insertend(&main, 2.7, "Chicken Handi Biryani", 1, 250);
+    insertend(&dess, 3.1, "Chocolate Overload Waffle", 1, 150);
+    insertend(&dess, 3.2, "Cinnamon Waffle", 1, 50);
+    insertend(&dess, 3.3, "Chocolate Cake", 1, 50);
+    insertend(&dess, 3.4, "Red Velevet Cake", 1, 50);
+    insertend(&dess, 3.5, "Strawberry Mouse", 1, 100);
+    insertend(&dess, 3.6, "Orea Freakshake", 1, 150);
+    insertend(&dess, 3.7, "Fruit Milkshake", 1, 80);
     //login
     char userid[30], password[30], userid1[30], password1[30], c=' ', k=' ';
     int i=0, ch;
@@ -103,36 +103,36 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                 else if(ch==1)
                 {
              order: printf("Enter Choice:\n");
-                    printf("1.Snacks\n2.Main Course\n3.Dessert\n");
+                    printf("1.Side\n2.Main Course\n3.Dessert\n");
                     scanf("%d", &ch);
                     while(1){
                     switch(ch)
                     {
-                        case 1: foodlist(&s);
+                        case 1: foodlist(&side);
                                 printf("\n");
                                 printf("Enter Food Code:\n");
                                 scanf("%f", &fcode);
                                 printf("Enter Quantity of Food:\n");
                                 scanf("%d", &qty);
-                                order(&s, &o, fcode, qty);
+                                order(&side, &o, fcode, qty);
                                 foodlist1(&o);
                                 break;
-                        case 2: foodlist(&m);
+                        case 2: foodlist(&main);
                                 printf("\n");
                                 printf("Enter Food Code:\n");
                                 scanf("%f", &fcode);
                                 printf("Enter Quantity of Food:\n");
                                 scanf("%d", &qty);
-                                order(&m, &o, fcode, qty);
+                                order(&main, &o, fcode, qty);
                                 foodlist1(&o);
                                 break;
-                        case 3: foodlist(&d);
+                        case 3: foodlist(&dess);
                                 printf("\n");
                                 printf("Enter Food Code:\n");
                                 scanf("%f", &fcode);
                                 printf("Enter Quantity of Food:\n");
                                 scanf("%d", &qty);
-                                order(&d, &o, fcode, qty);
+                                order(&dess, &o, fcode, qty);
                                 foodlist1(&o);
                                 break;
                         default: printf("Invalid Choice.\n");
@@ -196,14 +196,14 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                 switch(adch)
                 {
                     case 1:cls();
-                        printf("\nSNACKS:\n");
-                        foodlist(&s);
+                        printf("\nSide:\n");
+                        foodlist(&side);
                         Sleep(3000);
                         printf("\nMAIN COURSE:\n");
-                        foodlist(&m);
+                        foodlist(&main);
                         Sleep(3000);
                         printf("\nDESSERT:\n");
-                        foodlist(&d);
+                        foodlist(&dess);
                         printf("\nPress 0 to continue.\n");
                         scanf("%d", &ch);
                         if(ch==0)
@@ -240,7 +240,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                                     scanf("%f", &pu);
                                     insertend(&s, fcu, fnameu, 1, pu);
                                     printf("\nMENU UPDATED\n");
-                                    foodlist(&s);
+                                    foodlist(&side);
                                     break;
                             case 2: printf("\nEnter Food Code:\n");
                                     scanf("%f", &fcu);
@@ -248,9 +248,9 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                                     scanf("%s", &fnameu);
                                     printf("\nEnter price:\n");
                                     scanf("%f", &pu);
-                                    insertend(&m, fcu, fnameu, 1, pu);
+                                    insertend(&main, fcu, fnameu, 1, pu);
                                     printf("\nMENU UPDATED\n");
-                                    foodlist(&m);
+                                    foodlist(&main);
                                     break;
                             case 3: printf("\nEnter Food Code:\n");
                                     scanf("%f", &fcu);
@@ -258,9 +258,9 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                                     scanf("%s", &fnameu);
                                     printf("\nEnter price:\n");
                                     scanf("%f", &pu);
-                                    insertend(&d, fcu, fnameu, 1, pu);
+                                    insertend(&dess, fcu, fnameu, 1, pu);
                                     printf("\nMENU UPDATED\n");
-                                    foodlist(&d);
+                                    foodlist(&dess);
                                     break;
 
                         }
@@ -273,7 +273,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             else
             {
                 printf("\n\n INCORRECT USERNAME OR PASSWORD");
-                Sleep(2000);
+                Sleep(3000);
             }
     }
 }
