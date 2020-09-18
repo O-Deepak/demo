@@ -20,7 +20,7 @@ int main() {
   
   /* Add your test functions in this format for testing*/
 
-  CU_add_test(suite, "printop",test_printop);
+  CU_add_test(suite, "printop",printop);
 
 
 /* Note: Do not edit START*/
