@@ -1,18 +1,5 @@
 #include<myfn.h>
-typedef struct node
-{
 
-	float data;
-	char foodname[50];
-	int quantity;
-	float price;
-    struct node *next;
-
-}node;
-typedef struct head
-{
-    node *start;
-}head;
 void main()
 {
     head x, side, main, dess, o;
