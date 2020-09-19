@@ -41,7 +41,7 @@ void foodlist(head *t)
     {
         printf("\n\t");
         printf("  %0.1f   |  %-25s     |    %0.2f   ",p->data,p->foodname,p->price);
-		ccolor(26);
+		
 		printf("\n\t");
         printf("-------------------------------------------------------");
         p=p->next;
