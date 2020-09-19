@@ -28,12 +28,12 @@ void insertend(head *t, float data, char foodname[25], int quantity, float price
 void foodlist(head *t)
 {
 
-	printf("\n\t"); ccolor(240);
-	printf("_______________________________________________________");ccolor(26);
-	printf("\n\t"); ccolor(240);
-	printf("  Food Code          Name                Price         ");ccolor(26);
-	printf("\n\t"); ccolor(240);
-	printf("-------------------------------------------------------");ccolor(26);
+	printf("\n\t");
+	printf("_______________________________________________________");
+	printf("\n\t"); 
+	printf("  Food Code          Name                Price         ");
+	printf("\n\t"); 
+	printf("-------------------------------------------------------");
 
 	node *p;
     p=t->start;
@@ -49,12 +49,12 @@ void foodlist(head *t)
 }
 void foodlist1(head *t)
 {
-	printf("\n\t"); ccolor(240);
-	printf("___________________________________________________________________");ccolor(26);
-	printf("\n\t"); ccolor(240);
-	printf("  Food Code       Name                       Quantity      Price   ");ccolor(26);
-	printf("\n\t"); ccolor(240);
-	printf("-------------------------------------------------------------------");ccolor(26);
+	printf("\n\t");
+	printf("___________________________________________________________________");
+	printf("\n\t"); 
+	printf("  Food Code       Name                       Quantity      Price   ");
+	printf("\n\t"); 
+	printf("-------------------------------------------------------------------");
 
 	node *p;
     p=t->start;
