@@ -7,7 +7,7 @@ void main()
     float fcode;
     int quantity, location;
     insert(&side, 1.1, "Samosa", 1, 25);
-    insert(&side, 1.2, "Grilled Cheese Sandwich", 1, 50);
+    insert(&side, 1.2, "Grilled Cheese Sandwich", 1, 50);           
     insert(&side, 1.3, "Nachos", 1, 100);
     insert(&main, 2.1, "Sambhar Rice", 1, 200);
     insert(&main, 2.2, "Pav Bhaji", 1, 100);
@@ -25,7 +25,6 @@ void main()
     insert(&dess, 3.5, "Strawberry Mouse", 1, 100);
     insert(&dess, 3.6, "Orea milkshake", 1, 150);
     insert(&dess, 3.7, "Chocolate Milkshake", 1, 80);
-    //login
     char userid[30], password[30], userid1[30], password1[30], c=' ', k=' ';
     int i=0, ch;
     while(1)
@@ -35,7 +34,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
         scanf("%d", &ch);
         if(ch==3)
             break;
-    //register new user
+    
         if(ch==2)
         {
             printf(" \n\n  ENTER USERNAME:-");
@@ -114,7 +113,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                 else if(ch==1)
                 {
              order: printf("Enter Choice:\n");
-                    printf("1.Side\n2.Main Course\n3.Dessert\n");
+                    printf("1.Side\n2.Main Course\n3.Dessert\n");   // source: https://www.codeproject.com/Questions/706772/I-need-to-write-a-Program-for-a-restaurant-Using-C
                     scanf("%d", &ch);
                     while(1){
                     switch(ch)
@@ -222,7 +221,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                         {
                         }
                         break;
-                    case 3: //Sleep(3000);
+                    case 3: ;
                         cls();
                         printf("Recent Order:\n");
                         foodlist1(&o);
