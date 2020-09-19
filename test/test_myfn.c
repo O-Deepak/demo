@@ -3,15 +3,15 @@
 
 /* Modify these two lines according to the project */
 #include <myfn.h>
-#define PROJECT_NAME    "DisplayOP"
+#define PROJECT_NAME    "FO"
 
 /* Prototypes for all the test functions */
-void insertend(head *t, float data, char foodname[25], int quantity, float price);
-void foodlist(head *t);
-void foodlist1(head *t);
-float getbill(head *t);
-void order(head *t, head *l, float fc, int qty);
-void cls();
+void test_insertend(head *t, float data, char foodname[25], int quantity, float price);
+void test_foodlist(head *t);
+void test_foodlist1(head *t);
+float test_getbill(head *t);
+void test_order(head *t, head *l, float fc, int qty);
+void test_cls();
 
 /* Start of the application test */
 int main() {
@@ -25,7 +25,12 @@ int main() {
   
   /* Add your test functions in this format for testing*/
 
-  CU_add_test(suite, "printop",printop);
+CU_add_test(suite, "insertend",test_insertend);
+CU_add_test(suite, "foodlist",test_foodlist);
+CU_add_test(suite, "foodlist1",test_foodlist1);
+CU_add_test(suite, "getbill",test_getbill);
+CU_add_test(suite, "order",test_order);
+CU_add_test(suite, "cls",test_cls);
 
 
 /* Note: Do not edit START*/
