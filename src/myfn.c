@@ -24,14 +24,7 @@ void insertend(head *t, float data, char foodname[25], int quantity, float price
         q->next=p;
     }
 }
-void ccolor(int clr)
-{
 
-	HANDLE  hConsole;
-	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole, clr);
-
-}
 void foodlist(head *t)
 {
 
