@@ -1,7 +1,7 @@
 #include<myfn.h>
 
 
-void insertend(head *t, float data, char foodname[25], int quantity, float price)
+void insert(head *t, float data, char foodname[25], int quantity, float price)
 {
     node *p, *q;
     p=(node *)malloc(sizeof(node));
@@ -87,7 +87,7 @@ void order(head *t, head *l, float fc, int qty)
     {
         p=p->next;
     }
-    insertend(l, fc, p->foodname, qty, (p->price*qty));
+    insert(l, fc, p->foodname, qty, (p->price*qty));
     return;
 }
 void cls()
