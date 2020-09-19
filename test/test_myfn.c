@@ -6,7 +6,12 @@
 #define PROJECT_NAME    "DisplayOP"
 
 /* Prototypes for all the test functions */
-void printop(int a);
+void insertend(head *t, float data, char foodname[25], int quantity, float price);
+void foodlist(head *t);
+void foodlist1(head *t);
+float getbill(head *t);
+void order(head *t, head *l, float fc, int qty);
+void cls();
 
 /* Start of the application test */
 int main() {
