@@ -6,7 +6,7 @@
 #define PROJECT_NAME    "FO"
 
 /* Prototypes for all the test functions */
-void test_insertend(head *t, float data, char foodname[25], int quantity, float price);
+void test_insert(head *t, float data, char foodname[25], int quantity, float price);
 void test_foodlist(head *t);
 void test_foodlist1(head *t);
 float test_getbill(head *t);
@@ -25,7 +25,7 @@ int main() {
   
   /* Add your test functions in this format for testing*/
 
-CU_add_test(suite, "insertend",test_insertend);
+CU_add_test(suite, "insert",test_insert);
 CU_add_test(suite, "foodlist",test_foodlist);
 CU_add_test(suite, "foodlist1",test_foodlist1);
 CU_add_test(suite, "getbill",test_getbill);
