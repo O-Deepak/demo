@@ -6,7 +6,6 @@ void main()
     x.start=side.start=main.start=dess.start=o.start=NULL;
     float fcode;
     int quantity, location;
-    ccolor(26);
     insertend(&side, 1.1, "Samosa", 1, 25);
     insertend(&side, 1.2, "Grilled Cheese Sandwich", 1, 50);
     insertend(&side, 1.3, "Nachos", 1, 100);
