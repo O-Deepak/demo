@@ -2,8 +2,8 @@
 
 void main()
 {
-    head x, side, main, dess, o;
-    x.start=side.start=main.start=dess.start=o.start=NULL;
+    head top, side, main, dess, o;
+    top.start=side.start=main.start=dess.start=o.start=NULL;
     float fcode;
     int quantity, location;
     insert(&side, 1.1, "Samosa", 1, 25);
