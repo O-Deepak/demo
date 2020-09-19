@@ -51,7 +51,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             }
             password1[i]='\0';
             printf("\n\n Registered Successfully!\n");
-            Sleep(2000);
+            
         }
         else
         {
@@ -73,7 +73,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             if(strcmp(userid,userid1)==0&&strcmp(password,password1)==0)
             {
                 printf("\n\n LOGIN SUCCESFULL!");
-                Sleep(2000);
+                
                 cls();
                 int i, ch;
       mainmenu: printf("Enter choice: 1.View Menu 2.View Previous Order 3.Log Out\n");
@@ -83,7 +83,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                     if(o.start==NULL)
                     {
                         printf("Previous Order does not exist!\n");
-                        Sleep(2000);
+                        
                         cls();
                         goto mainmenu;
                     }
@@ -181,7 +181,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             else if(strcmp(userid,"admin")==0&&strcmp(password,"admin123")==0)
             {
                 printf("\n\n WELCOME ADMIN");
-                Sleep(3000);
+                
                 cls();
                 int adch;
         admin:  printf("\n\n Enter Choice:\n");
@@ -273,7 +273,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             else
             {
                 printf("\n\n INCORRECT USERNAME OR PASSWORD");
-                Sleep(3000);
+                
             }
     }
 }
