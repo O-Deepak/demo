@@ -6,11 +6,11 @@
 #define PROJECT_NAME    "FO"
 
 /* Prototypes for all the test functions */
-void test_insert(head *t, float data, char foodname[25], int quantity, float price);
-void test_foodlist(head *t);
-void test_foodlist1(head *t);
-float test_getbill(head *t);
-void test_order(head *t, head *l, float fc, int qty);
+void test_insert();
+void test_foodlist();
+void test_foodlist1();
+float test_getbill();
+void test_order();
 void test_cls();
 
 /* Start of the application test */
