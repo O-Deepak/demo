@@ -12,6 +12,8 @@ void foodlist1(head *t);
 float getbill(head *t);
 void order(head *t, head *l, float fc, int qty);
 void cls();
+void test_foodlist();
+//void foodlist(head *t);
 
 /* Start of the application test */
 int main() {
