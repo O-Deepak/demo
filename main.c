@@ -43,7 +43,8 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             printf(" \n\n  ENTER PASSWORD:-");
             while(i<20)
             {
-                password1[i]=getch();
+                scanf("%c",&password1[i]);
+                //password1[i]=getch();
                 c=password1[i];
                 if(c=='\r') break;
                 else printf("*");
