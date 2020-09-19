@@ -21,7 +21,7 @@ typedef struct head
 }head;
 
 
-void insert(head *t, float data, char foodname[25], int quantity, float price);
+void insertend(head *t, float data, char foodname[25], int quantity, float price);
 void foodlist(head *t);
 void foodlist1(head *t);
 float getbill(head *t);
