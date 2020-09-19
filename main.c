@@ -61,9 +61,9 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
         else
         {
 
-            printf(" \n\n ENTER USERNAME:-");
+            printf(" \n\n Enter username:-");
             gets(userid);
-            printf(" \n\n ENTER PASSWORD:-");
+            printf(" \n\n Enter password:-");
             c=' '; i=0;
             while(i<20)
             {
@@ -77,7 +77,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             password[i]='\0';
             if(strcmp(userid,userid1)==0&&strcmp(password,password1)==0)
             {
-                printf("\n\n LOGIN SUCCESFULL!");
+                printf("\n\n !!!!!!!!!!!LOGIN SUCCESFUL!!!!!!!!!!!");
 ///<<<<<<< branch
 //=======
                 
@@ -90,7 +90,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                 {
                     if(o.start==NULL)
                     {
-                        printf("Previous Order does not exist!\n");
+                        printf("Sorry, Previous Order does not exist!\n");
 //<<<<<<< branch
 //=======
                         
@@ -123,7 +123,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                                 printf("\n");
                                 printf("Enter Food Code:\n");
                                 scanf("%f", &fcode);
-                                printf("Enter Quantity of Food:\n");
+                                printf("Enter the quantity:\n");
                                 scanf("%d", &quantity);
                                 order(&side, &o, fcode, quantity);
                                 foodlist1(&o);
@@ -132,7 +132,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                                 printf("\n");
                                 printf("Enter Food Code:\n");
                                 scanf("%f", &fcode);
-                                printf("Enter Quantity of Food:\n");
+                                printf("Enter the quantity:\n");
                                 scanf("%d", &quantity);
                                 order(&main, &o, fcode, quantity);
                                 foodlist1(&o);
@@ -141,12 +141,12 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                                 printf("\n");
                                 printf("Enter Food Code:\n");
                                 scanf("%f", &fcode);
-                                printf("Enter Quantity of Food:\n");
+                                printf("Enter the quantity:\n");
                                 scanf("%d", &quantity);
                                 order(&dess, &o, fcode, quantity);
                                 foodlist1(&o);
                                 break;
-                        default: printf("Invalid Choice.\n");
+                        default: printf("Sorry, Invalid Choice.\n");
                     }
         afterorder: printf("\n\n");
                     printf("\n\t\tEnter Choice: \n\t\t1.Hungry For More? \n\t\t2.View Order \n\t\t3.Confirm Order?\n");
@@ -159,7 +159,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                     else if(ch==2)
                     {
                         cls();
-                        printf("Current Order:\n");
+                        printf("Current Order status:\n");
                         foodlist1(&o);
                         goto afterorder;
                     }
@@ -168,8 +168,8 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                     {
                         cls();
                         foodlist1(&o);
-                        printf("\nTotal amount to pay: %0.2f\n", getbill(&o));
-                        printf("\nEnjoy Your Meal!\n");
+                        printf("\nTotal bill amount: %0.2f\n", getbill(&o));
+                        printf("\nEnjoy Your Meal :D !\n");
                         printf("\nPress 0 to continue.\n");
                         scanf("%d", &ch);
                         if(ch==0)
@@ -197,17 +197,17 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                 
 //>>>>>>> master
                 cls();
-                int adch;
+                int addchoice;
         admin:  printf("\n\n Enter Choice:\n");
-                printf("     1. View Menu\n");
-                printf("     2. Update Menu\n");
-                printf("     3. View Recent Order\n");
-                printf("     4. Log Out\n");
-                scanf("%d", &adch);
+                printf("1. View Menu\n");
+                printf("2. Update Menu\n");
+                printf("3. View Recent Order\n");
+                printf("4. Log Out\n");
+                scanf("%d", &addchoice);
                 cls();
-                if(adch==4)
+                if(addchoice==4)
                     goto mainscr;
-                switch(adch)
+                switch(addchoice)
                 {
                     case 1:cls();
                         printf("\nSide:\n");
