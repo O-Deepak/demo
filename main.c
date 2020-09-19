@@ -39,7 +39,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
         if(ch==2)
         {
             printf(" \n\n  ENTER USERNAME:-");
-            scanf("%s", &userid1);
+            gets(userid1);
             printf(" \n\n  ENTER PASSWORD:-");
             while(i<20)
             {
@@ -51,13 +51,17 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             }
             password1[i]='\0';
             printf("\n\n Registered Successfully!\n");
+//<<<<<<< branch
+          
+//=======
             
+//>>>>>>> master
         }
         else
         {
 
             printf(" \n\n ENTER USERNAME:-");
-            scanf("%c", &userid);
+            gets(userid);
             printf(" \n\n ENTER PASSWORD:-");
             c=' '; i=0;
             while(i<20)
@@ -69,11 +73,13 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                 i++;
             }
             password[i]='\0';
-            //USERMENU
             if(strcmp(userid,userid1)==0&&strcmp(password,password1)==0)
             {
                 printf("\n\n LOGIN SUCCESFULL!");
+///<<<<<<< branch
+//=======
                 
+//>>>>>>> master
                 cls();
                 int i, ch;
       mainmenu: printf("Enter choice: 1.View Menu 2.View Previous Order 3.Log Out\n");
@@ -83,7 +89,10 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                     if(o.start==NULL)
                     {
                         printf("Previous Order does not exist!\n");
+//<<<<<<< branch
+//=======
                         
+//>>>>>>> master
                         cls();
                         goto mainmenu;
                     }
@@ -152,7 +161,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                         foodlist1(&o);
                         goto afterorder;
                     }
-                    //billing
+
                     else if(ch==3)
                     {
                         cls();
@@ -181,7 +190,10 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             else if(strcmp(userid,"admin")==0&&strcmp(password,"admin123")==0)
             {
                 printf("\n\n WELCOME ADMIN");
+//<<<<<<< branch
+//=======
                 
+//>>>>>>> master
                 cls();
                 int adch;
         admin:  printf("\n\n Enter Choice:\n");
@@ -198,11 +210,9 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                     case 1:cls();
                         printf("\nSide:\n");
                         foodlist(&side);
-                        Sleep(3000);
-                        printf("\nMAIN COURSE:\n");
+                         printf("\nMAIN COURSE:\n");
                         foodlist(&main);
-                        Sleep(3000);
-                        printf("\nDESSERT:\n");
+                         printf("\nDESSERT:\n");
                         foodlist(&dess);
                         printf("\nPress 0 to continue.\n");
                         scanf("%d", &ch);
@@ -235,7 +245,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                             case 1: printf("\nEnter Food Code:\n");
                                     scanf("%f", &fcu);
                                     printf("\nEnter Food name:\n");
-                                    scanf("%c", &fnameu);
+                                    gets(fnameu);
                                     printf("\nEnter price:\n");
                                     scanf("%f", &pu);
                                     insertend(&side, fcu, fnameu, 1, pu);
@@ -245,7 +255,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                             case 2: printf("\nEnter Food Code:\n");
                                     scanf("%f", &fcu);
                                     printf("\nEnter Food name:\n");
-                                    scanf("%c", &fnameu);
+                                    gets(fnameu);
                                     printf("\nEnter price:\n");
                                     scanf("%f", &pu);
                                     insertend(&main, fcu, fnameu, 1, pu);
@@ -255,7 +265,7 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
                             case 3: printf("\nEnter Food Code:\n");
                                     scanf("%f", &fcu);
                                     printf("\nEnter Food name:\n");
-                                    scanf("%c", &fnameu);
+                                    gets(fnameu);
                                     printf("\nEnter price:\n");
                                     scanf("%f", &pu);
                                     insertend(&dess, fcu, fnameu, 1, pu);
@@ -273,7 +283,11 @@ mainscr: printf("\n\nEnter Choice: 1. Login 2.New User 3.Exit\n");
             else
             {
                 printf("\n\n INCORRECT USERNAME OR PASSWORD");
+//<<<<<<< branch
+               
+//=======
                 
+//>>>>>>> master
             }
     }
 }
